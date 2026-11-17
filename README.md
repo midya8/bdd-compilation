@@ -1,16 +1,16 @@
-# CompileLab
+# Bdd compilation
 
 Build a small ordinary reduced ordered binary decision diagram and inspect
-how its shape changes with variable order. CompileLab retains the complete
+how its shape changes with variable order. Bdd compilation retains the complete
 reduction decisions, assignment paths, model counts and rational masses.
 Existential projection has a separate counting universe and extension ledger.
 
-[Interactive workbench](https://midya8.github.io/compilelab/) ·
+[Interactive workbench](https://midya8.github.io/bdd-compilation/) ·
 [Exact contract](CONTRACT.md) · [Prior-work ledger](SOURCES.md) ·
 [Reproduction evidence](EVIDENCE.md)
 
 Two paired equalities have the same four models under every variable order,
-but their ordinary reduced diagram uses six to nine nonterminals. CompileLab
+but their ordinary reduced diagram uses six to nine nonterminals. Bdd compilation
 shows all 24 orders, each selected graph's complete reduction decisions, per-node
 suffix counts, exact gap-aware literal-weight masses, and every assignment path.
 The five-variable multiplexer control spans seven to 13 nonterminals over 120 orders.
@@ -38,7 +38,7 @@ A zero-weight satisfying extension still establishes logical existence.
 Python 3.10+; no runtime dependencies:
 
 ```sh
-git clone https://github.com/midya8/compilelab.git
+git clone https://github.com/midya8/bdd-compilation.git
 cd compilelab
 python -m venv .venv
 . .venv/bin/activate
